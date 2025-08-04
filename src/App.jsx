@@ -90,49 +90,154 @@ const Loading = () => (
 // Home Page
 const Home = () => {
   return (
-    <div className="max-w-4xl mx-auto text-center py-12">
-      <div className="mb-8">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-400" style={{ fontFamily: 'Uthmanic' }}>
-          بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
-        </h1>
-        <p className="text-lg text-gray-300 mb-8">
-          In the name of Allah, the Most Gracious, the Most Merciful
-        </p>
-      </div>
-
-      <div className="bg-gray-800 rounded-lg p-8 shadow-lg">
-        <h2 className="text-3xl font-semibold mb-6 text-white">Welcome to Quran Reader</h2>
-        <p className="text-gray-300 text-lg leading-relaxed mb-8">
-          A simple, respectful digital companion for reading and exploring the Holy Quran. 
-          Navigate through chapters (Surahs), sections (Juz), search for specific verses, 
-          and read with translations in multiple languages.
-        </p>
-        
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-3 text-green-400">📚 Browse Chapters</h3>
-            <p className="text-gray-300">Explore all 114 Surahs of the Quran with easy navigation</p>
-          </div>
-          <div className="bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-3 text-green-400">🔍 Search Verses</h3>
-            <p className="text-gray-300">Find specific verses and topics with our search feature</p>
-          </div>
-          <div className="bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-3 text-green-400">🌍 Multiple Languages</h3>
-            <p className="text-gray-300">Read translations in various languages</p>
-          </div>
-          <div className="bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-3 text-green-400">📱 Mobile Friendly</h3>
-            <p className="text-gray-300">Optimized for reading on all devices</p>
-          </div>
+    <div className="max-w-6xl mx-auto py-8">
+      {/* Hero Section */}
+      <div className="text-center mb-12">
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-400" style={{ fontFamily: 'Uthmanic' }}>
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 mb-6">
+            In the name of Allah, the Most Gracious, the Most Merciful
+          </p>
+          <div className="w-24 h-1 bg-green-400 mx-auto rounded-full"></div>
         </div>
 
-        <Link
-          to="/navigate"
-          className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
-        >
-          Start Reading
-        </Link>
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 shadow-2xl border border-gray-700">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Welcome to Quran Reader</h2>
+          <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
+            A beautiful, respectful digital companion for reading and exploring the Holy Quran. 
+            Experience the sacred text with authentic Uthmani script, multiple translations, 
+            and an interface designed for contemplation and study.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <Link
+              to="/navigate"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              🕌 Start Reading
+            </Link>
+            <Link
+              to="/about"
+              className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 border border-gray-600"
+            >
+              📖 Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Features Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105">
+          <div className="text-3xl mb-4">📚</div>
+          <h3 className="text-xl font-semibold mb-3 text-green-400">Browse Chapters</h3>
+          <p className="text-gray-300 text-sm leading-relaxed">Explore all 114 Surahs with beautiful Arabic script and easy navigation through verses</p>
+        </div>
+        
+        <div className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105">
+          <div className="text-3xl mb-4">🔍</div>
+          <h3 className="text-xl font-semibold mb-3 text-green-400">Smart Search</h3>
+          <p className="text-gray-300 text-sm leading-relaxed">Find specific verses, topics, and concepts with our intelligent search functionality</p>
+        </div>
+        
+        <div className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105">
+          <div className="text-3xl mb-4">🌍</div>
+          <h3 className="text-xl font-semibold mb-3 text-green-400">Multiple Languages</h3>
+          <p className="text-gray-300 text-sm leading-relaxed">Read authentic translations in English, Urdu, Indonesian and other languages</p>
+        </div>
+        
+        <div className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105">
+          <div className="text-3xl mb-4">📱</div>
+          <h3 className="text-xl font-semibold mb-3 text-green-400">Mobile Optimized</h3>
+          <p className="text-gray-300 text-sm leading-relaxed">Perfect reading experience across all devices with responsive design</p>
+        </div>
+      </div>
+
+      {/* Quick Access Section */}
+      <div className="bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-700 mb-12">
+        <h3 className="text-2xl font-bold text-center mb-8 text-white">Quick Access</h3>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="text-center">
+            <h4 className="text-lg font-semibold mb-4 text-green-400">Popular Chapters</h4>
+            <div className="space-y-3">
+              <Link to="/chapter/1" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">1. Al-Fatiha</span>
+                <span className="text-gray-400 text-sm ml-2">(The Opening)</span>
+              </Link>
+              <Link to="/chapter/2" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">2. Al-Baqarah</span>
+                <span className="text-gray-400 text-sm ml-2">(The Cow)</span>
+              </Link>
+              <Link to="/chapter/36" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">36. Ya-Sin</span>
+                <span className="text-gray-400 text-sm ml-2">(Ya Sin)</span>
+              </Link>
+              <Link to="/chapter/67" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">67. Al-Mulk</span>
+                <span className="text-gray-400 text-sm ml-2">(The Sovereignty)</span>
+              </Link>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <h4 className="text-lg font-semibold mb-4 text-green-400">Browse by Juz</h4>
+            <div className="space-y-3">
+              <Link to="/juz/1" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">Juz 1</span>
+                <span className="text-gray-400 text-sm ml-2">(Alif Lam Meem)</span>
+              </Link>
+              <Link to="/juz/15" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">Juz 15</span>
+                <span className="text-gray-400 text-sm ml-2">(Subhan Allahi)</span>
+              </Link>
+              <Link to="/juz/28" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">Juz 28</span>
+                <span className="text-gray-400 text-sm ml-2">(Qad Sami Allah)</span>
+              </Link>
+              <Link to="/juz/30" className="block bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-colors">
+                <span className="text-green-400 font-medium">Juz 30</span>
+                <span className="text-gray-400 text-sm ml-2">(Amma Yatasa'alun)</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Statistics Section */}
+      <div className="bg-gradient-to-r from-green-900/20 to-gray-800 rounded-2xl p-8 border border-green-400/20">
+        <h3 className="text-2xl font-bold text-center mb-8 text-white">The Holy Quran</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="bg-gray-800/50 p-4 rounded-lg">
+            <div className="text-3xl font-bold text-green-400 mb-2">114</div>
+            <div className="text-gray-300 text-sm">Chapters (Surahs)</div>
+          </div>
+          <div className="bg-gray-800/50 p-4 rounded-lg">
+            <div className="text-3xl font-bold text-green-400 mb-2">6,236</div>
+            <div className="text-gray-300 text-sm">Verses (Ayahs)</div>
+          </div>
+          <div className="bg-gray-800/50 p-4 rounded-lg">
+            <div className="text-3xl font-bold text-green-400 mb-2">30</div>
+            <div className="text-gray-300 text-sm">Sections (Juz)</div>
+          </div>
+          <div className="bg-gray-800/50 p-4 rounded-lg">
+            <div className="text-3xl font-bold text-green-400 mb-2">1400+</div>
+            <div className="text-gray-300 text-sm">Years Old</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Quote */}
+      <div className="text-center mt-12 py-8">
+        <div className="bg-gray-800 rounded-xl p-6 border-l-4 border-green-400">
+          <p className="text-lg md:text-xl text-gray-300 italic mb-3" style={{ fontFamily: 'Uthmanic' }}>
+            وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِّلْمُؤْمِنِينَ
+          </p>
+          <p className="text-gray-400 text-sm">
+            "And We send down of the Quran that which is healing and mercy for the believers" - Quran 17:82
+          </p>
+        </div>
       </div>
     </div>
   );
