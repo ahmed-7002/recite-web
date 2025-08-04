@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
 
 // API Base URL
 const API_BASE = 'https://api.alquran.cloud/v1';
