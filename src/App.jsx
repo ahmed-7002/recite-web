@@ -364,7 +364,7 @@ const NavigateQuran = () => {
         <div className="flex flex-col sm:flex-row gap-3">
           <input
             type="text"
-            placeholder="Search by Surah name, number, or verse..."
+            placeholder="Search by Surah name..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
