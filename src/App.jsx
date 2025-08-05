@@ -333,6 +333,8 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800">
       {/* Hero Section with Background Image */}
       <div className="relative overflow-hidden">
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-slate-900/80 to-gray-900/90"></div>
         
         {/* Decorative geometric pattern - responsive sizing */}
         <div className="absolute inset-0 opacity-5">
@@ -343,11 +345,11 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-3 sm:px-4 py-8 sm:py-16 lg:py-24">
           {/* Bismillah Section */}
-          <div className="relative py-12 sm:py-20 bg-cover bg-center text-center mb-8 sm:mb-16   overflow-hidden"
+          <div className="relative py-12 sm:py-20 bg-cover bg-center text-center mb-8 sm:mb-16  overflow-hidden"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')`
         }}>
-             <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
   
   <div className="relative z-10 px-3 sm:px-6">
     <div className="inline-block relative">
@@ -375,7 +377,7 @@ const Home = () => {
                    }}>
                 {/* Cinematic gradient overlay with blur */}
                 
-                <div className="relative bg-gradient-to-br from-gray-800/70 via-slate-800/70 to-gray-900/70 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 lg:p-16 border border-gray-700/30 shadow-2xl">
+                <div className=" backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 lg:p-16 border border-gray-700/30 shadow-2xl">
                   <div className="text-center">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white leading-tight drop-shadow-2xl">
                       Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Quran Reader</span>
@@ -492,15 +494,15 @@ const Home = () => {
         {/* Quick Access Section with Background */}
         <div className="relative bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden"
      style={{
-       backgroundImage: `url('https://images.unsplash.com/photo-1596125160970-6f02eeba00d3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHF1cmFufGVufDB8fDB8fHww')`
+       backgroundImage: `url('https://plus.unsplash.com/premium_photo-1677013624162-db18bf12f2be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVyYW58ZW58MHx8MHx8fDA%3D')`
      }}>
  
-  <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+  <div className="absolute inset-0 backdrop-blur-sm "></div>
   
   {/* Background decoration */}
-  <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-900/10 to-emerald-900/10 rounded-2xl sm:rounded-3xl"></div>
-  <div className="absolute top-10 right-10 w-32 h-32 sm:w-64 sm:h-64 bg-emerald-400/5 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-10 left-10 w-24 h-24 sm:w-48 sm:h-48 bg-teal-400/5 rounded-full blur-2xl"></div>
+  <div className="absolute inset-0  rounded-2xl sm:rounded-3xl"></div>
+  <div className="absolute top-10 right-10 w-32 h-32 sm:w-64 sm:h-64 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 left-10 w-24 h-24 sm:w-48 sm:h-48 rounded-full blur-1xl"></div>
           
           <div className="relative bg-gray-800/30 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 border border-gray-700/30 shadow-2xl">
             <div className="text-center mb-8 sm:mb-12">
@@ -605,7 +607,7 @@ const Home = () => {
        {/* Statistics Section */}
 <div className="relative mb-12 sm:mb-20 mt-12 sm:mt-20 bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1620367274821-be34135cfd22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHF1cmFufGVufDB8fDB8fHww')` }}>
   {/* Cinematic gradient overlay with blur */}
-  <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+  <div className="absolute inset-0 backdrop-blur-sm "></div>
   
   {/* Islamic geometric pattern effect overlay */}
   <div className="absolute inset-0 opacity-10">
@@ -663,7 +665,7 @@ const Home = () => {
     {/* Main card with background image */}
     <div className="relative bg-cover bg-center rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1677013624162-db18bf12f2be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVyYW58ZW58MHx8MHx8fDA%3D')` }}>
       {/* Cinematic gradient overlay with blur */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+      <div className="absolute inset-0 backdrop-blur-sm "></div>
       
       {/* Content */}
       <div className="relative p-4 sm:p-8 md:p-12 border-l-4 border-emerald-400">
