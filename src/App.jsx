@@ -333,8 +333,6 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800">
       {/* Hero Section with Background Image */}
       <div className="relative overflow-hidden">
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-slate-900/80 to-gray-900/90"></div>
         
         {/* Decorative geometric pattern - responsive sizing */}
         <div className="absolute inset-0 opacity-5">
@@ -345,7 +343,7 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-3 sm:px-4 py-8 sm:py-16 lg:py-24">
           {/* Bismillah Section */}
-          <div className="relative py-12 sm:py-20 bg-cover bg-center text-center mb-8 sm:mb-16 rounded-2xl sm:rounded-3xl overflow-hidden"
+          <div className="relative py-12 sm:py-20 bg-cover bg-center text-center mb-8 sm:mb-16   overflow-hidden"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')`
         }}>
