@@ -701,42 +701,42 @@ const About = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800">
       {/* Hero Section */}
       <div 
-        className="relative py-20 bg-cover bg-center"
+        className="relative py-12 sm:py-20 bg-cover bg-center"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/70 via-slate-900/85 to-gray-900/90"></div>
-        <div className="relative max-w-6xl mx-auto px-4 text-center">
-          <div className="inline-block relative mb-6">
+        <div className="relative max-w-6xl mx-auto px-3 sm:px-4 text-center">
+          <div className="inline-block relative mb-4 sm:mb-6">
             <div className="absolute inset-0 bg-emerald-400/20 blur-3xl rounded-full"></div>
-            <h1 className="relative text-4xl md:text-6xl font-bold text-white mb-4">
+            <h1 className="relative text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-3 sm:mb-4">
               About <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Quran Reader</span>
             </h1>
           </div>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light px-2">
             A digital companion crafted with reverence for the Holy Quran
           </p>
-          <div className="flex justify-center mt-8">
-            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-emerald-400 to-transparent rounded-full"></div>
+          <div className="flex justify-center mt-6 sm:mt-8">
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-transparent via-emerald-400 to-transparent rounded-full"></div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-16">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 py-8 sm:py-16">
         {/* Introduction Section */}
-        <div className="relative mb-16">
-          <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-3xl blur opacity-20"></div>
-          <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-700/50 shadow-2xl">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🕌</span>
+        <div className="relative mb-12 sm:mb-16">
+          <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-2xl sm:rounded-3xl blur opacity-20"></div>
+          <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 border border-gray-700/50 shadow-2xl">
+            <div className="text-center mb-6 sm:mb-8">
+              <div className="inline-flex items-center justify-center gap-3 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                  <span className="text-xl sm:text-2xl">🕌</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">Our Mission</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Our Mission</h2>
               </div>
             </div>
-            <p className="text-lg md:text-xl leading-relaxed text-gray-300 text-center max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 text-center max-w-4xl mx-auto">
               This Quran Reader application was created with the utmost respect and reverence for the Holy Quran. 
               Our goal is to provide a simple, clean, and accessible way to read and explore the Quran on digital devices, 
               making the sacred text available to Muslims and anyone interested in understanding its teachings.
@@ -745,24 +745,24 @@ const About = () => {
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 mb-12 sm:mb-16">
           {/* Purpose & Mission */}
           <div className="group relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-            <div className="relative bg-gray-800/60 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 h-full shadow-lg hover:shadow-2xl">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🎯</span>
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl sm:rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            <div className="relative bg-gray-800/60 backdrop-blur-sm p-4 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 h-full shadow-lg hover:shadow-2xl">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl sm:text-2xl">🎯</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white">Purpose & Vision</h3>
+                <h3 className="text-lg sm:text-2xl font-bold text-white">Purpose & Vision</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
                 To make the Holy Quran easily accessible to Muslims and anyone interested in reading it, 
                 with a focus on clarity, respect, and ease of use. We believe technology should serve 
                 spiritual growth and learning, bringing people closer to divine guidance.
               </p>
-              <div className="mt-6 p-4 bg-gray-700/50 rounded-lg border-l-4 border-blue-400">
-                <p className="text-gray-300 text-sm italic">
+              <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-gray-700/50 rounded-lg border-l-4 border-blue-400">
+                <p className="text-gray-300 text-xs sm:text-sm italic">
                   "And We have certainly made the Quran easy for remembrance, so is there any who will remember?" - Quran 54:17
                 </p>
               </div>
@@ -771,30 +771,30 @@ const About = () => {
 
           {/* Data Sources */}
           <div className="group relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-            <div className="relative bg-gray-800/60 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 h-full shadow-lg hover:shadow-2xl">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📚</span>
+            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-xl sm:rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            <div className="relative bg-gray-800/60 backdrop-blur-sm p-4 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 h-full shadow-lg hover:shadow-2xl">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl sm:text-2xl">📚</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white">Authentic Sources</h3>
+                <h3 className="text-lg sm:text-2xl font-bold text-white">Authentic Sources</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed text-lg mb-6">
+              <p className="text-gray-300 leading-relaxed text-base sm:text-lg mb-4 sm:mb-6">
                 All Quranic text, translations, and metadata are provided by the Al-Quran Cloud API, 
                 ensuring authenticity and accuracy. We are grateful for their service to the Muslim community.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3 text-emerald-400">
-                  <span className="text-lg">✓</span>
-                  <span>Authentic Uthmani script</span>
+              <div className="space-y-2 sm:space-y-3">
+                <div className="flex items-center gap-2 sm:gap-3 text-emerald-400">
+                  <span className="text-base sm:text-lg">✓</span>
+                  <span className="text-sm sm:text-base">Authentic Uthmani script</span>
                 </div>
-                <div className="flex items-center gap-3 text-emerald-400">
-                  <span className="text-lg">✓</span>
-                  <span>Verified translations</span>
+                <div className="flex items-center gap-2 sm:gap-3 text-emerald-400">
+                  <span className="text-base sm:text-lg">✓</span>
+                  <span className="text-sm sm:text-base">Verified translations</span>
                 </div>
-                <div className="flex items-center gap-3 text-emerald-400">
-                  <span className="text-lg">✓</span>
-                  <span>Accurate metadata</span>
+                <div className="flex items-center gap-2 sm:gap-3 text-emerald-400">
+                  <span className="text-base sm:text-lg">✓</span>
+                  <span className="text-sm sm:text-base">Accurate metadata</span>
                 </div>
               </div>
             </div>
@@ -802,20 +802,20 @@ const About = () => {
         </div>
 
         {/* Features Section */}
-        <div className="relative mb-16">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                <span className="text-2xl">⚡</span>
+        <div className="relative mb-12 sm:mb-16">
+          <div className="text-center mb-8 sm:mb-12">
+            <div className="inline-flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                <span className="text-xl sm:text-2xl">⚡</span>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Features & Capabilities</h3>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Features & Capabilities</h3>
             </div>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-2">
               Designed with modern technology to enhance your Quranic reading experience
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {[
               {
                 icon: "📖",
@@ -873,15 +873,15 @@ const About = () => {
               }
             ].map((feature, index) => (
               <div key={index} className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                <div className={`relative bg-gradient-to-br ${feature.gradient} bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl h-full`}>
-                  <div className="text-3xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-lg sm:rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <div className={`relative bg-gradient-to-br ${feature.gradient} bg-gray-800/50 backdrop-blur-sm p-4 sm:p-6 rounded-lg sm:rounded-xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl h-full`}>
+                  <div className="text-2xl sm:text-3xl mb-3 sm:mb-4 transform group-hover:scale-110 transition-transform duration-300 text-center sm:text-left">
                     {feature.icon}
                   </div>
-                  <h4 className="text-lg font-semibold mb-3 text-emerald-400">
+                  <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-emerald-400 text-center sm:text-left">
                     {feature.title}
                   </h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed text-center sm:text-left">
                     {feature.description}
                   </p>
                 </div>
@@ -892,21 +892,21 @@ const About = () => {
 
         {/* Learn More Section */}
         <div 
-          className="relative mb-16 bg-cover bg-center rounded-3xl overflow-hidden"
+          className="relative mb-12 sm:mb-16 bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-slate-900/85 to-gray-900/90"></div>
-          <div className="relative p-8 md:p-12 text-center">
+          <div className="relative p-4 sm:p-8 md:p-12 text-center">
             <div className="max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🌟</span>
+              <div className="inline-flex items-center justify-center gap-3 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                  <span className="text-xl sm:text-2xl">🌟</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white">Explore Further</h3>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Explore Further</h3>
               </div>
-              <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed px-2">
                 Deepen your understanding of the Quran with comprehensive resources, 
                 scholarly interpretations, and detailed explanations of verses and chapters.
               </p>
@@ -914,15 +914,15 @@ const About = () => {
                 href="https://quran.com/about-the-quran"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-emerald-500/20"
+                className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-emerald-500/20 w-full sm:w-auto"
               >
-                <span className="text-xl">📖</span>
-                <span>Learn More About the Quran</span>
-                <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span className="text-lg sm:text-xl">📖</span>
+                <span className="text-sm sm:text-base">Learn More About the Quran</span>
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-xs sm:text-sm text-gray-400 mt-3 sm:mt-4 px-2">
                 Visit Quran.com for detailed explanations, tafsir, and scholarly resources
               </p>
             </div>
@@ -931,32 +931,32 @@ const About = () => {
 
         {/* Quote Section */}
         <div 
-          className="relative bg-cover bg-center rounded-3xl overflow-hidden"
+          className="relative bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden"
           style={{
             backgroundImage: `url('https://plus.unsplash.com/premium_photo-1677587536653-0d02efbb70ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/85 via-slate-900/90 to-emerald-900/85"></div>
-          <div className="relative p-8 md:p-12 text-center">
+          <div className="relative p-4 sm:p-8 md:p-12 text-center">
             <div className="max-w-4xl mx-auto">
-              <div className="mb-8">
-                <div className="text-2xl md:text-3xl text-gray-300 leading-relaxed mb-6" style={{ fontFamily: 'Uthmanic' }}>
+              <div className="mb-6 sm:mb-8">
+                <div className="text-xl sm:text-2xl md:text-3xl text-gray-300 leading-relaxed mb-4 sm:mb-6 px-2" style={{ fontFamily: 'Uthmanic' }}>
                   إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ
                 </div>
-                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-emerald-400 to-transparent mx-auto rounded-full mb-6"></div>
-                <p className="text-gray-400 text-lg md:text-xl mb-2">
+                <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-transparent via-emerald-400 to-transparent mx-auto rounded-full mb-4 sm:mb-6"></div>
+                <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-2 px-2">
                   "Indeed, it is We who sent down the Quran and indeed, We will be its guardian."
                 </p>
-                <p className="text-emerald-400 text-sm font-medium">
+                <p className="text-emerald-400 text-xs sm:text-sm font-medium">
                   — Quran 15:9
                 </p>
               </div>
               
-              <div className="pt-8 mt-8 border-t border-gray-700/50">
-                <p className="text-gray-400 text-lg italic">
+              <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-gray-700/50">
+                <p className="text-gray-400 text-base sm:text-lg italic px-2">
                   May Allah accept this humble effort and make it beneficial for all who use it.
                 </p>
-                <p className="text-emerald-400 font-semibold text-xl mt-2">
+                <p className="text-emerald-400 font-semibold text-lg sm:text-xl mt-2">
                   آمين (Ameen)
                 </p>
               </div>
