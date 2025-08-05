@@ -336,30 +336,30 @@ const Home = () => {
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-slate-900/80 to-gray-900/90"></div>
         
-        {/* Decorative geometric pattern */}
+        {/* Decorative geometric pattern - responsive sizing */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-32 h-32 border border-emerald-400 rotate-45 rounded-lg"></div>
-          <div className="absolute top-40 right-32 w-24 h-24 border border-emerald-400 rotate-12 rounded-full"></div>
-          <div className="absolute bottom-32 left-40 w-28 h-28 border border-emerald-400 rotate-45 rounded-lg"></div>
+          <div className="absolute top-8 left-4 sm:top-20 sm:left-20 w-16 h-16 sm:w-32 sm:h-32 border border-emerald-400 rotate-45 rounded-lg"></div>
+          <div className="absolute top-20 right-6 sm:top-40 sm:right-32 w-12 h-12 sm:w-24 sm:h-24 border border-emerald-400 rotate-12 rounded-full"></div>
+          <div className="absolute bottom-16 left-8 sm:bottom-32 sm:left-40 w-14 h-14 sm:w-28 sm:h-28 border border-emerald-400 rotate-45 rounded-lg"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-16 lg:py-24">
+        <div className="relative max-w-7xl mx-auto px-3 sm:px-4 py-8 sm:py-16 lg:py-24">
           {/* Bismillah Section */}
-          <div  className="relative py-20 bg-cover bg-center text-center mb-16 rounded-3xl overflow-hidden"
+          <div className="relative py-12 sm:py-20 bg-cover bg-center text-center mb-8 sm:mb-16 rounded-2xl sm:rounded-3xl overflow-hidden"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')`
         }}>
              <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
   
-  <div className="relative z-10">
+  <div className="relative z-10 px-3 sm:px-6">
     <div className="inline-block relative">
       <div className="absolute inset-0 bg-emerald-400/15 blur-3xl rounded-full"></div>
-      <h1 className="relative text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-emerald-300 leading-relaxed drop-shadow-2xl" 
+      <h1 className="relative text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-emerald-300 leading-relaxed drop-shadow-2xl" 
           style={{ fontFamily: 'Uthmanic' }}>
         بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
       </h1>
     </div>
-    <p className="text-lg md:text-xl text-gray-200 mb-8 font-light drop-shadow-lg">
+    <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8 font-light drop-shadow-lg px-2">
       In the name of Allah, the Most Gracious, the Most Merciful
     </p>
   </div>
@@ -368,35 +368,35 @@ const Home = () => {
           {/* Main Hero Card */}
           <div className="max-w-5xl mx-auto">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-400 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-400 rounded-2xl sm:rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
               
               {/* Background image contained within the card */}
-              <div className="relative bg-cover bg-center rounded-3xl overflow-hidden"
+              <div className="relative bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden"
                    style={{
                      backgroundImage: `url('https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')`
                    }}>
                 {/* Cinematic gradient overlay with blur */}
                 
-                <div className="relative bg-gradient-to-br from-gray-800/70 via-slate-800/70 to-gray-900/70 backdrop-blur-md rounded-3xl p-8 md:p-12 lg:p-16 border border-gray-700/30 shadow-2xl">
+                <div className="relative bg-gradient-to-br from-gray-800/70 via-slate-800/70 to-gray-900/70 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 lg:p-16 border border-gray-700/30 shadow-2xl">
                   <div className="text-center">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white leading-tight drop-shadow-2xl">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white leading-tight drop-shadow-2xl">
                       Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Quran Reader</span>
                     </h2>
-                    <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-12 max-w-4xl mx-auto font-light drop-shadow-lg">
+                    <p className="text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-12 max-w-4xl mx-auto font-light drop-shadow-lg px-2">
                       A beautiful, respectful digital companion for reading and exploring the Holy Quran. 
                       Experience the sacred text with authentic Uthmani script, multiple translations, 
                       and an interface designed for contemplation and study.
                     </p>
                     
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center px-2">
                       {lastRead && (
                         <button
                           onClick={continueReading}
-                          className="group relative bg-gradient-to-r from-blue-600/90 to-blue-700/90 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-blue-500/30 backdrop-blur-sm"
+                          className="group relative bg-gradient-to-r from-blue-600/90 to-blue-700/90 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-blue-500/30 backdrop-blur-sm w-full sm:w-auto"
                         >
-                          <div className="flex items-center gap-3">
-                            <span className="text-xl">📖</span>
-                            <div className="text-left">
+                          <div className="flex items-center justify-center gap-3">
+                            <span className="text-lg sm:text-xl">📖</span>
+                            <div className="text-center sm:text-left">
                               <div>Continue Reading</div>
                               <div className="text-sm opacity-90 font-normal">
                                 {lastRead.chapterName} - Page {lastRead.page || 1}
@@ -405,24 +405,26 @@ const Home = () => {
                           </div>
                         </button>
                       )}
-                      <Link
-                        to="/navigate"
-                        className="group relative bg-gradient-to-r from-emerald-600/90 to-teal-600/90 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-emerald-500/30 backdrop-blur-sm"
-                      >
-                        <div className="flex items-center gap-3">
-                          <span className="text-xl">🕌</span>
-                          <span>Start Reading</span>
-                        </div>
-                      </Link>
-                      <Link
-                        to="/about"
-                        className="group relative bg-gray-700/60 hover:bg-gray-600/70 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 border border-gray-600/40 hover:border-gray-500/50 backdrop-blur-sm"
-                      >
-                        <div className="flex items-center gap-3">
-                          <span className="text-xl">📖</span>
-                          <span>Learn More</span>
-                        </div>
-                      </Link>
+                      <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                        <Link
+                          to="/navigate"
+                          className="group relative bg-gradient-to-r from-emerald-600/90 to-teal-600/90 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-emerald-500/30 backdrop-blur-sm w-full sm:w-auto"
+                        >
+                          <div className="flex items-center justify-center gap-3">
+                            <span className="text-lg sm:text-xl">🕌</span>
+                            <span>Start Reading</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/about"
+                          className="group relative bg-gray-700/60 hover:bg-gray-600/70 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl sm:rounded-2xl transition-all duration-300 border border-gray-600/40 hover:border-gray-500/50 backdrop-blur-sm w-full sm:w-auto"
+                        >
+                          <div className="flex items-center justify-center gap-3">
+                            <span className="text-lg sm:text-xl">📖</span>
+                            <span>Learn More</span>
+                          </div>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -432,19 +434,19 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-8 sm:py-16">
         {/* Features Grid */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <div className="mb-12 sm:mb-20">
+          <div className="text-center mb-8 sm:mb-12 px-2">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
               Discover the Features
             </h3>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
               Explore the tools designed to enhance your Quranic reading experience
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {[
               {
                 icon: "📚",
@@ -472,15 +474,15 @@ const Home = () => {
               }
             ].map((feature, index) => (
               <div key={index} className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                <div className={`relative bg-gradient-to-br ${feature.gradient} bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl h-full`}>
-                  <div className="text-4xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-xl sm:rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <div className={`relative bg-gradient-to-br ${feature.gradient} bg-gray-800/50 backdrop-blur-sm p-4 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700/50 hover:border-emerald-400/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl h-full`}>
+                  <div className="text-3xl sm:text-4xl mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform duration-300 text-center sm:text-left">
                     {feature.icon}
                   </div>
-                  <h4 className="text-xl font-semibold mb-4 text-emerald-400">
+                  <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-emerald-400 text-center sm:text-left">
                     {feature.title}
                   </h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-gray-300 text-sm leading-relaxed text-center sm:text-left">
                     {feature.description}
                   </p>
                 </div>
@@ -490,7 +492,7 @@ const Home = () => {
         </div>
 
         {/* Quick Access Section with Background */}
-        <div className="relative bg-cover bg-center rounded-3xl overflow-hidden"
+        <div className="relative bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden"
      style={{
        backgroundImage: `url('https://images.unsplash.com/photo-1596125160970-6f02eeba00d3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHF1cmFufGVufDB8fDB8fHww')`
      }}>
@@ -498,40 +500,40 @@ const Home = () => {
   <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
   
   {/* Background decoration */}
-  <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-900/10 to-emerald-900/10 rounded-3xl"></div>
-  <div className="absolute top-10 right-10 w-64 h-64 bg-emerald-400/5 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-10 left-10 w-48 h-48 bg-teal-400/5 rounded-full blur-2xl"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-900/10 to-emerald-900/10 rounded-2xl sm:rounded-3xl"></div>
+  <div className="absolute top-10 right-10 w-32 h-32 sm:w-64 sm:h-64 bg-emerald-400/5 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 left-10 w-24 h-24 sm:w-48 sm:h-48 bg-teal-400/5 rounded-full blur-2xl"></div>
           
-          <div className="relative bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-700/30 shadow-2xl">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <div className="relative bg-gray-800/30 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 border border-gray-700/30 shadow-2xl">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
                 Quick Access
               </h3>
-              <p className="text-gray-400 text-lg">
+              <p className="text-gray-400 text-base sm:text-lg">
                 Jump right into your reading journey
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <h4 className="text-xl font-semibold text-emerald-400 mb-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="text-center mb-6 sm:mb-8">
+                  <h4 className="text-lg sm:text-xl font-semibold text-emerald-400 mb-2">
                     {recentChapters.length > 0 ? 'Recent Chapters' : 'Most Read Chapters'}
                   </h4>
                   <div className="w-16 h-1 bg-emerald-400 mx-auto rounded-full"></div>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {recentChapters.length > 0 ? (
                     recentChapters.slice(0, 4).map((chapter) => (
                       <Link 
                         key={chapter.number} 
                         to={`/chapter/${chapter.number}`} 
-                        className="group block bg-gray-700/50 hover:bg-gray-600/70 backdrop-blur-sm p-4 rounded-xl transition-all duration-300 border border-gray-600/30 hover:border-emerald-400/50 hover:transform hover:scale-[1.02]"
+                        className="group block bg-gray-700/50 hover:bg-gray-600/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 border border-gray-600/30 hover:border-emerald-400/50 hover:transform hover:scale-[1.02]"
                       >
                         <div className="flex items-center justify-between">
                           <div>
-                            <span className="text-emerald-400 font-semibold text-lg">{chapter.number}. {chapter.englishName}</span>
-                            <div className="text-gray-400 text-sm">({chapter.englishNameTranslation})</div>
+                            <span className="text-emerald-400 font-semibold text-base sm:text-lg">{chapter.number}. {chapter.englishName}</span>
+                            <div className="text-gray-400 text-xs sm:text-sm">({chapter.englishNameTranslation})</div>
                           </div>
                           <div className="text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             →
@@ -550,12 +552,12 @@ const Home = () => {
                         <Link 
                           key={chapter.number}
                           to={`/chapter/${chapter.number}`} 
-                          className="group block bg-gray-700/50 hover:bg-gray-600/70 backdrop-blur-sm p-4 rounded-xl transition-all duration-300 border border-gray-600/30 hover:border-emerald-400/50 hover:transform hover:scale-[1.02]"
+                          className="group block bg-gray-700/50 hover:bg-gray-600/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 border border-gray-600/30 hover:border-emerald-400/50 hover:transform hover:scale-[1.02]"
                         >
                           <div className="flex items-center justify-between">
                             <div>
-                              <span className="text-emerald-400 font-semibold text-lg">{chapter.number}. {chapter.name}</span>
-                              <div className="text-gray-400 text-sm">({chapter.translation})</div>
+                              <span className="text-emerald-400 font-semibold text-base sm:text-lg">{chapter.number}. {chapter.name}</span>
+                              <div className="text-gray-400 text-xs sm:text-sm">({chapter.translation})</div>
                             </div>
                             <div className="text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                               →
@@ -568,12 +570,12 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <h4 className="text-xl font-semibold text-emerald-400 mb-2">Browse by Juz</h4>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="text-center mb-6 sm:mb-8">
+                  <h4 className="text-lg sm:text-xl font-semibold text-emerald-400 mb-2">Browse by Juz</h4>
                   <div className="w-16 h-1 bg-emerald-400 mx-auto rounded-full"></div>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {[
                     { number: 1, name: "Alif Lam Meem" },
                     { number: 15, name: "Subhan Allahi" },
@@ -583,12 +585,12 @@ const Home = () => {
                     <Link 
                       key={juz.number}
                       to={`/juz/${juz.number}`} 
-                      className="group block bg-gray-700/50 hover:bg-gray-600/70 backdrop-blur-sm p-4 rounded-xl transition-all duration-300 border border-gray-600/30 hover:border-emerald-400/50 hover:transform hover:scale-[1.02]"
+                      className="group block bg-gray-700/50 hover:bg-gray-600/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 border border-gray-600/30 hover:border-emerald-400/50 hover:transform hover:scale-[1.02]"
                     >
                       <div className="flex items-center justify-between">
                         <div>
-                          <span className="text-emerald-400 font-semibold text-lg">Juz {juz.number}</span>
-                          <div className="text-gray-400 text-sm">({juz.name})</div>
+                          <span className="text-emerald-400 font-semibold text-base sm:text-lg">Juz {juz.number}</span>
+                          <div className="text-gray-400 text-xs sm:text-sm">({juz.name})</div>
                         </div>
                         <div className="text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           →
@@ -603,7 +605,7 @@ const Home = () => {
         </div>
 
        {/* Statistics Section */}
-<div className="relative mb-20 mt-20 bg-cover bg-center rounded-3xl overflow-hidden" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1620367274821-be34135cfd22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHF1cmFufGVufDB8fDB8fHww)` }}>
+<div className="relative mb-12 sm:mb-20 mt-12 sm:mt-20 bg-cover bg-center rounded-2xl sm:rounded-3xl overflow-hidden" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1620367274821-be34135cfd22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHF1cmFufGVufDB8fDB8fHww')` }}>
   {/* Cinematic gradient overlay with blur */}
   <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
   
@@ -616,20 +618,20 @@ const Home = () => {
     </div>
   </div>
   
-  <div className="relative z-10 p-8 md:p-12">
-    <div className="text-center mb-12">
+  <div className="relative z-10 p-4 sm:p-8 md:p-12">
+    <div className="text-center mb-8 sm:mb-12">
       <div className="inline-block relative">
         <div className="absolute inset-0 bg-emerald-400/15 blur-3xl rounded-full"></div>
-        <h3 className="relative text-3xl md:text-4xl font-bold text-emerald-300 mb-4 drop-shadow-2xl">
+        <h3 className="relative text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-300 mb-3 sm:mb-4 drop-shadow-2xl">
           The Holy Quran
         </h3>
       </div>
-      <p className="text-gray-200 text-lg font-light drop-shadow-lg">
+      <p className="text-gray-200 text-base sm:text-lg font-light drop-shadow-lg">
         Divine guidance preserved for all humanity
       </p>
     </div>
     
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
       {[
         { number: "114", label: "Chapters (Surahs)", icon: "📖" },
         { number: "6,236", label: "Verses (Ayahs)", icon: "✨" },
@@ -637,14 +639,14 @@ const Home = () => {
         { number: "1400+", label: "Years Old", icon: "⏳" }
       ].map((stat, index) => (
         <div key={index} className="group text-center">
-          <div className="relative bg-black/30 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-emerald-400/30 hover:border-emerald-400/60 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl">
-            <div className="text-2xl mb-4 transform group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
+          <div className="relative bg-black/30 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-emerald-400/30 hover:border-emerald-400/60 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-2xl">
+            <div className="text-xl sm:text-2xl mb-3 sm:mb-4 transform group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
               {stat.icon}
             </div>
-            <div className="text-3xl md:text-4xl font-bold text-emerald-300 mb-3 drop-shadow-2xl">
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-300 mb-2 sm:mb-3 drop-shadow-2xl">
               {stat.number}
             </div>
-            <div className="text-gray-200 text-sm font-medium drop-shadow-lg">
+            <div className="text-gray-200 text-xs sm:text-sm font-medium drop-shadow-lg">
               {stat.label}
             </div>
           </div>
@@ -655,34 +657,31 @@ const Home = () => {
 </div>
 
        {/* Footer Quote */}
-<div className="text-center mt-20 mb-20">
+<div className="text-center mt-12 sm:mt-20 mb-12 sm:mb-20 px-2">
   <div className="relative group max-w-4xl mx-auto">
     {/* Hover glow effect */}
-    <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/30 to-teal-400/30 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-1000"></div>
+    <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400/30 to-teal-400/30 rounded-xl sm:rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-1000"></div>
     
     {/* Main card with background image */}
-    <div className="relative bg-cover bg-center rounded-2xl overflow-hidden shadow-2xl" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1677013624162-db18bf12f2be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVyYW58ZW58MHx8MHx8fDA%3D')` }}>
+    <div className="relative bg-cover bg-center rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1677013624162-db18bf12f2be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVyYW58ZW58MHx8MHx8fDA%3D')` }}>
       {/* Cinematic gradient overlay with blur */}
       <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
       
       {/* Content */}
-      <div className="relative p-8 md:p-12 border-l-4 border-emerald-400">
-        <div className="mb-6">
-          <div className="inline-block relative mb-6">
+      <div className="relative p-4 sm:p-8 md:p-12 border-l-4 border-emerald-400">
+        <div className="mb-4 sm:mb-6">
+          <div className="inline-block relative mb-4 sm:mb-6">
             <div className="absolute inset-0 bg-emerald-400/15 blur-3xl rounded-full"></div>
-            <p className="relative text-xl md:text-2xl text-emerald-300 leading-relaxed drop-shadow-2xl" style={{ fontFamily: 'Uthmanic' }}>
+            <p className="relative text-lg sm:text-xl md:text-2xl text-emerald-300 leading-relaxed drop-shadow-2xl" style={{ fontFamily: 'Uthmanic' }}>
               وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِّلْمُؤْمِنِينَ
             </p>
           </div>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-emerald-400 to-transparent mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-200 text-base md:text-lg font-light drop-shadow-lg">
+          <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-transparent via-emerald-400 to-transparent mx-auto rounded-full mb-4 sm:mb-6"></div>
+          <p className="text-gray-200 text-sm sm:text-base md:text-lg font-light drop-shadow-lg">
             "And We send down of the Quran that which is healing and mercy for the believers"
           </p>
-          <p className="text-emerald-300 text-sm mt-2 font-medium drop-shadow-lg">
+          <p className="text-emerald-300 text-xs sm:text-sm mt-2 font-medium drop-shadow-lg">
             — Quran 17:82
-          </p>
-          <p className="text-gray-200 text-base md:text-lg font-light drop-shadow-lg">
-            "And We send down of the Quran that which is healing and mercy for the believers"
           </p>
         </div>
       </div>
